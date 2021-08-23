@@ -11,9 +11,7 @@ class ControllerModuleGratis extends Controller {
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
             echo "<pre />\n";
-               /* print_r($this->request->post);
-                echo "</pre>\n";
-                exit;*/
+
 			$this->model_setting_setting->editSetting('gratis', $this->request->post);
 
 			$this->session->data['success'] = $this->language->get('text_success');

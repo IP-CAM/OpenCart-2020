@@ -11,6 +11,7 @@
       </tr>
     </thead>
     <tbody>
+    <!-- Nowy kod START -->
       <?php foreach ($products as $product) { ?>
       <tr>
       <?php if ($product['product_id']!=$gratis_product_id[0]){ ?>
@@ -40,6 +41,7 @@
         <td class="text-right"><?php echo $product['total']; ?></td>
       </tr>
       <?php } ?>
+      <!-- Nowy kod KONIEC -->
       <?php foreach ($vouchers as $voucher) { ?>
       <tr>
         <td class="text-left"><?php echo $voucher['description']; ?></td>
