@@ -48,6 +48,7 @@
               </tr>
             </thead>
             <tbody>
+            <!-- Nowy kod START -->
             <?php foreach ($products as $product) { 
                 if($product['id'] != $gratis_produkt[0]){
             ?>
@@ -134,6 +135,7 @@
                 } 
               }
               ?>
+              <!-- Nowy kod KONIEC -->
               <?php foreach ($vouchers as $vouchers) { ?>
               <tr>
                 <td></td>
